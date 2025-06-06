@@ -1,0 +1,100 @@
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-grow: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.fullscreen.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fullscreen-container {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1312px;
+    align-items: start;
+    flex-grow: 1;
+    padding: 8px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.fullscreen-container-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 8px;
+    background-color: #ffffff;
+    margin-bottom: 16px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@media (min-width: 672px) {
+    .fullscreen-container-content {
+        max-width: 760px;
+    }
+}
+
+.fullscreen.active .fullscreen-container-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fullscreen-container-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.fullscreen-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.fullscreen-link-btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 24px;
+    color: #3E29E3;
+    cursor: pointer;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, opacity 0.3s ease-in-out;
+    outline: none;
+}
+.fullscreen-link-btn {
+    color: #3E29E3 !important;
+    text-decoration: none;
+}
+
+.fullscreen-menu-close-btn {
+    width: 38px;
+    height: 38px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.fullscreen-grid-5 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}

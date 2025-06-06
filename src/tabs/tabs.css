@@ -1,0 +1,35 @@
+.typo-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    max-width: 100%;
+    padding: 0 16px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.typo-row {
+    display: contents;
+    line-height: normal !important;
+}
+
+.typo-tabs {
+    border-bottom: var(--gray) 1px solid;
+    padding: 16px;
+}
+
+.tab-link {
+    border: none;
+    background: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    color:  var(--gray);
+    font-weight: 500;}
+
+.tab-link-active {
+    color: var(--accent-2);
+}
+
+.typo-hidden {
+    display: none;
+}

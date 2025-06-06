@@ -1,0 +1,66 @@
+.inner-grid-3 > .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+    align-items: start;
+}
+
+.gradient-button {
+    height: 56px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 28px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(45deg, #DD80ED, #3D28E3);
+    outline: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gradient-button::before,
+.gradient-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.gradient-button::before {
+    background: linear-gradient(45deg, #3D28E3, #DD80ED);
+}
+
+.gradient-button::after {
+    background: linear-gradient(30deg, #3D28E3, #DD80ED);
+}
+
+.gradient-button:hover::before {
+    opacity: 1;
+}
+
+.gradient-button:active::before {
+    opacity: 0;
+}
+
+.gradient-button:active::after {
+    opacity: 1;
+}
+
+.gradient-button:disabled {
+    background: #CBCBCC;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.gradient-button:disabled::before,
+.gradient-button:disabled::after {
+    display: none;
+}

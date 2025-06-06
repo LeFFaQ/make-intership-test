@@ -1,0 +1,17 @@
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    color: #3E29E3;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    align-items: start;
+}

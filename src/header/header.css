@@ -1,0 +1,67 @@
+.main-header {
+    padding: 16px 0;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1312px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3A62;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.surname {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.name {
+    font-size: 14px;
+    color: #7D7D7D;
+}
+
+.burger-menu-btn {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.burger-menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: #1B1B1B;
+    transition: all 0.3s ease;
+}

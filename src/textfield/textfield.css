@@ -1,0 +1,40 @@
+.input-container {
+    color: var(--gray);
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    color: var(--gray);
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--gray);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field:hover {
+    border-bottom: 2px solid var(--accent-2);
+}
+
+.input-field.error {
+    border-bottom: 4px solid #E80F3B !important;
+}
+
+.input-field.filled {
+    border-bottom: 4px solid var(--accent-2);
+}
+
+.error-message {
+    display: none;
+    color: #E80F3B;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error-message.active {
+    display: block;
+}
