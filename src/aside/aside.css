@@ -1,8 +1,13 @@
 
 nav a {
     text-decoration: none;
+    color: var(--gray);
+}
+nav a:hover {
+    text-decoration: none;
     color: black;
 }
+
 
 nav a.active {
     color: #3E29E3;

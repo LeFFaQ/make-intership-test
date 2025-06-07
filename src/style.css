@@ -56,7 +56,8 @@
     --accent-1: #FF3A62;
     --accent-2: #3E29E3;
     --accent-3: #DD80ED;
-    --gray: #CBCBCC;
+    --gray: #7D7D7D;
+
 }
 
 *, *::before, *::after {
@@ -226,105 +227,129 @@ img {
 
 
 h1 {
+    font-weight: bold;
     font-size: var(--h1-font-size-mobile);
     line-height: calc(var(--h1-font-size-mobile) + var(--line-height));
 }
 
 h2 {
+    font-weight: bold;
     font-size: var(--h2-font-size-mobile);
     line-height: calc(var(--h2-font-size-mobile) + var(--line-height));
 }
 
 h3 {
+    font-weight: 500;
     font-size: var(--h3-font-size-mobile);
     line-height: calc(var(--h3-font-size-mobile) + var(--line-height));
 }
 
 h4 {
+    font-weight: 500;
     font-size: var(--h4-font-size-mobile);
     line-height: calc(var(--h4-font-size-mobile) + var(--line-height));
 }
 
 .p-lead {
+    font-weight: 400;
     font-size: var(--p-lead-size-mobile);
     line-height: calc(var(--p-lead-size-mobile) + var(--line-height));
 }
 
 .p-18 {
+    font-weight: 400;
     font-size: var(--p-18-size-mobile);
     line-height: calc(var(--p-18-size-mobile) + var(--line-height));
 }
 
 .p-16 {
+    font-weight: 400;
     font-size: var(--p-16-size-mobile);
     line-height: calc(var(--p-16-size-mobile) + var(--line-height));
 }
 
 .p-14 {
+    font-weight: 400;
     font-size: var(--p-14-size-mobile);
     line-height: calc(var(--p-14-size-mobile) + var(--line-height));
 }
 
 @media (min-width: 672px) {
     h1 {
+        font-weight: bold;
         font-size: var(--h1-font-size);
         line-height: calc(var(--h1-font-size) + var(--line-height));
     }
 
     h2 {
+        font-weight: bold;
         font-size: var(--h2-font-size);
         line-height: calc(var(--h2-font-size) + var(--line-height));
     }
 
     h3 {
+        font-weight: 500;
         font-size: var(--h3-font-size);
         line-height: calc(var(--h3-font-size) + var(--line-height));
     }
 
     h4 {
+        font-weight: 500;
         font-size: var(--h4-font-size);
         line-height: calc(var(--h4-font-size) + var(--line-height));
     }
 
     .p-lead {
+        font-weight: 400;
         font-size: var(--p-lead-size);
         line-height: calc(var(--p-lead-size) + var(--line-height));
     }
 
     .p-18 {
+        font-weight: 400;
         font-size: var(--p-18-size);
         line-height: calc(var(--p-18-size) + var(--line-height));
     }
 
     .p-16 {
+        font-weight: 400;
         font-size: var(--p-16-size);
         line-height: calc(var(--p-16-size) + var(--line-height));
     }
 
     .p-14 {
+        font-weight: 400;
         font-size: var(--p-14-size);
         line-height: calc(var(--p-14-size) + var(--line-height));
     }
 
     .h1-mobile {
+        font-weight: bold;
         font-size: var(--h1-font-size-mobile);
         line-height: calc(var(--h1-font-size-mobile) + var(--line-height));
     }
 
     .h2-mobile {
+        font-weight: bold;
         font-size: var(--h2-font-size-mobile);
         line-height: calc(var(--h2-font-size-mobile) + var(--line-height));
     }
 
     .h3-mobile {
+        font-weight: 500;
         font-size: var(--h3-font-size-mobile);
         line-height: calc(var(--h3-font-size-mobile) + var(--line-height));
     }
 
     .h4-mobile {
+        font-weight: 500;
         font-size: var(--h4-font-size-mobile);
         line-height: calc(var(--h4-font-size-mobile) + var(--line-height));
     }
+}
+
+.gray {
+    color: var(--gray);
 }
 
 
