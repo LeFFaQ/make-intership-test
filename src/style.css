@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @import "textfield/textfield.css";
 @import "dropdown/dropdown.css";
 @import "button/button.css";
@@ -7,6 +9,7 @@
 @import "tabs/tabs.css";
 @import "header/header.css";
 @import "overview/overview.css";
+
 
 
 :root {
