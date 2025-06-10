@@ -13,368 +13,97 @@
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=open_in_new"/>
 </head>
 <body>
-<header class="main-header">
-    <div class="header-container">
-        <div class="logo-name">
-            <div class="logo-circle">
-                <img src="/make_bird.svg" width="26px" alt="logo">
-            </div>
-            <div class="author-name">
-                <div class="surname">Романов</div>
-                <div class="name">Данил Евгеньевич</div>
-            </div>
-        </div>
-        <button class="burger-menu-btn" id="burgerMenuBtn">
-            <img src="/ico_menu.svg" alt="menu">
-        </button>
+
+<header class="sticky top-0 h-12 bg-white col-span-full shadow">
+    <div class="@container m-auto w-screen max-w-[424px] tablet:max-w-[928px] desktop:max-w-[1312px]">
+        <span class="flex items-center justify-between w-full">lskdjfasjdlfkjl5</span>
     </div>
 </header>
-<div class="container">
-    <aside class="sidebar">
-        <nav class="menu p-14">
-            <a href="#preface">Напутственное слово</a>
-            <a href="#grid">Сетка</a>
-            <a href="#typo">Типографика</a>
-            <a href="#ui">UI</a>
-        </nav>
 
-    </aside>
+<div class="@container m-auto w-screen min-h-screen max-w-[424px] tablet:max-w-[928px] desktop:max-w-[1312px] ">
+    <div class="grid grid-cols-4 tablet:grid-cols-8 desktop:grid-cols-12 gap-6 tablet:gap-8">
 
-    <main class="main">
-        <section id="preface">
-            <h1>Тестовое задание</h1>
-            <h3>Уровень: junior</h3>
-            <p class="p-16 char-limiter">Привет! Моё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке
-                страницы указано ФИО, чтобы всем было удобнее. В менюхе под иконкой бургером так же находятся мои данные. Ну поехали!
-            </p>
-        </section>
+        <aside class="hidden tablet:flex tablet:col-span-2 desktop:col-span-3 row-span-full items-center justify-center-safe max-h-screen">
+            <!--Здесь нужно считать размер header (48px == 3rem == h-12 из header)-->
+            <nav class="fixed translate-y-[-48px]">
+                <ul class="">
+                    <li class="mb-4">
+                        <a href="#preface" class="text-sm text-gray-700 hover:text-gray-900">Предисловие</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#grid" class="text-sm text-gray-700 hover:text-gray-900">Сетка</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#typeface" class="text-sm text-gray-700 hover:text-gray-900">Типография</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#ui" class="text-sm text-gray-700 hover:text-gray-900">UI</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="grid grid-cols-subgrid col-span-4 tablet:col-span-6 desktop:col-span-9">
+            <section id="preface" class="grid grid-cols-subgrid col-span-full">
+                <h1 class="col-span-full">Тестовое задание</h1>
+                <h3 class="col-span-full">Уровень: junior</h3>
+                <p class="col-span-full tablet:col-span-4 desktop:col-span-6 text-base">Привет! Твоё тестовое задание —
+                    грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет
+                    удобнее.
+                    В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?
+                </p>
+            </section>
+            <section id="grid" class="grid grid-cols-subgrid col-span-full">
+                <h2 class="col-span-full">Сетка</h2>
+                <p class="col-span-full tablet:col-span-4 desktop:col-span-6 text-base">Задание предполагает адаптивную
+                    вёрстку. Используется 3 состояния в зависимости от устройства. Сетка
+                    «резиновая» — переменной ширины.</p>
 
-        <section id="grid">
-            <h2>Сетка</h2>
-            <p class="p-16 char-limiter">Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка
-                «резиновая» — переменной ширины.</p>
-
-            <h3>Десктоп (1200+)</h3>
-            <div class="inner-grid-4">
-                <div>
-                    <div class="p-14 gray">Контент</div>
-                    <div class="p-lead">1072–1312</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Колонок</div>
-                    <div class="p-lead">12</div>
-                </div>
-                <div>
-                    <div class="p-14  gray">Ширина колонки</div>
-                    <div class="p-lead">60-80</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Межколонник</div>
-                    <div class="p-lead">32</div>
-                </div>
-            </div>
-            <img src="/pic_desctop.png" alt="">
-
-            <h3>Планшет (736+)</h3>
-            <div class="inner-grid-4">
-                <div>
-                    <div class="p-14 gray">Контент</div>
-                    <div class="p-lead">672–928</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Колонок</div>
-                    <div class="p-lead">8</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Ширина колонки</div>
-                    <div class="p-lead">56-88</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Межколонник</div>
-                    <div class="p-lead">32</div>
-                </div>
-            </div>
-            <img src="/pic_tab.png" alt="">
-
-            <h3>Телефон (320+)</h3>
-            <div class="inner-grid-4">
-                <div>
-                    <div class="p-14 gray">Контент</div>
-                    <div class="p-lead">296–424</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Колонок</div>
-                    <div class="p-lead">4</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Ширина колонки</div>
-                    <div class="p-lead">56-88</div>
-                </div>
-                <div>
-                    <div class="p-14 gray">Межколонник</div>
-                    <div class="p-lead">24</div>
-                </div>
-            </div>
-            <img src="/pic_mob.png" alt="">
-
-        </section>
-
-        <section id="typo">
-            <h2>Типографика</h2>
-            <p class="p-16 char-limiter">Используется шрифт Graphik. На телефонах стили типографики переопределяются.</p>
-
-            <div class="typo-tabs">
-                <button class="tab-link P-16 tab-link-active" view-mode="desktop">Десктоп</button>
-                <button class="tab-link P-16" view-mode="mobile">Телефон</button>
-            </div>
-            <div id="typo-content-desktop" class="typo-content">
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H1, 48/56, bold</div>
-                    <h1>Текст заголовка</h1>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H2, 32/40, bold</div>
-                    <h2>Текст заголовка</h2>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H3, 24/32, medium</div>
-                    <h3>Текст заголовка</h3>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H4, 18/28, medium</div>
-                    <h4>Текст заголовка</h4>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Лид P_Lead, 24/32, regular</div>
-                    <div class="p-lead">Текст лида</div>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Крупный текст P_18, 18/28, regular</div>
-                    <div class="p-18">Крупный текст</div>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Основной текст P_16, 16/24, regular</div>
-                    <div class="p-16">Основной текст</div>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Вспомогательный текст P_14, 14/20, regular</div>
-                    <div class="p-14">Вспомогательный текст</div>
-                </div>
-            </div>
-            <div id="typo-content-mobile" class="typo-content typo-hidden">
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H1, 32/40, bold</div>
-                    <h1 class="h1-mobile">Текст заголовка</h1>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H2, 28/36, bold</div>
-                    <h2 class="h2-mobile">Текст заголовка</h2>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H3, 20/28, medium</div>
-                    <h3 class="h3-mobile">Текст заголовка</h3>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Заголовок H4, 18/28, medium</div>
-                    <h4 class="h4-mobile">Текст заголовка</h4>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Лид P_Lead, 20/28, regular</div>
-                    <div class="p-lead-mobile">Текст лида</div>
-                </div>
-                <div class="typo-row">
-                    <div class="p-14 gray">Крупный текст P_18, 18/28, regular</div>
-                    <div class="p-18-mobile">Крупный текст</div>
-                </div>
-                <div class="typo-row">
-                    <div class="P-14 gray">Основной текст P_16, 16/24, regular</div>
-                    <div class="P-16-mobile">Основной текст</div>
-                </div>
-                <div class="typo-row">
-                    <div class="P-14 gray">Вспомогательный текст P_14, 14/20, regular</div>
-                    <div class="P-14-mobile">Вспомогательный текст</div>
-                </div>
-            </div>
-            <script type="module" src="src/tabs/tabs.js"></script>
-        </section>
-
-        <section id="ui">
-            <h2>UI</h2>
-            <h3>Текстовое поле</h3>
-            <div class="inner-grid-3">
-                <div class="input-container">
-                    <input type="text" id="email-1" placeholder="Введите ваш email" class="input-field">
-                    <span class="error-message" id="error-message-1">Неправильный формат email</span>
-                </div>
-                <div class="input-container">
-                    <input type="text" id="email-2" placeholder="Введите ваш email" class="input-field">
-                    <span class="error-message" id="error-message-2">Неправильный формат email</span>
-                </div>
-                <div class="input-container">
-                    <input type="text" id="email-3" placeholder="Введите ваш email" class="input-field">
-                    <span class="error-message" id="error-message-3">Неправильный формат email</span>
-                </div>
-                <div class="input-container">
-                    <input type="text" id="email-4" placeholder="Введите ваш email" class="input-field">
-                    <span class="error-message" id="error-message-4">Неправильный формат email</span>
-                </div>
-            </div>
-            <script type="module" src="src/textfield/textfield.js"></script>
-
-            <h3>Выпадающий список</h3>
-            <p>Компонент состоит из текстового поля и выпадающей подсказки</p>
-            <div class="inner-grid-3 dropdowns">
-                <div class="dropdown" id="dropdown-1">
-                    <button class="dropdown-toggle" id="dropdownToggle-1">Выберите</button>
-                    <div class="dropdown-menu" id="dropdownMenu-1">
-                        <div data-value="1">Вариант 1</div>
-                        <div data-value="2">Вариант 2</div>
-                        <div data-value="3">Вариант 3</div>
+                <h3 class="col-span-full">Десктоп (1200+)</h3>
+                <div class="col-span-full grid grid-cols-4 gap-6 tablet:gap-8">
+                    <div>
+                        <div class="gray">Контент</div>
+                        <div class="p-lead">1072–1312</div>
+                    </div>
+                    <div>
+                        <div class="gray">Колонок</div>
+                        <div class="p-lead">12</div>
+                    </div>
+                    <div>
+                        <div class="gray">Ширина колонки</div>
+                        <div class="p-lead">60-80</div>
+                    </div>
+                    <div>
+                        <div class="gray">Межколонник</div>
+                        <div class="p-lead">32</div>
                     </div>
                 </div>
-
-                <div class="dropdown" id="dropdown-2">
-                    <button class="dropdown-toggle" id="dropdownToggle-2">Выберите</button>
-                    <div class="dropdown-menu" id="dropdownMenu-2">
-                        <div data-value="1">Вариант 1</div>
-                        <div data-value="2">Вариант 2</div>
-                        <div data-value="3">Вариант 3</div>
+                <img class="col-span-full" src="/pic_desctop.png" alt="">
+                <h3 class="col-span-full">Десктоп (1200+)</h3>
+                <div class="col-span-full grid grid-cols-4 gap-6 tablet:gap-8">
+                    <div>
+                        <div class="text-gray-400">Контент</div>
+                        <div class="p-lead">1072–1312</div>
+                    </div>
+                    <div>
+                        <div class="text-gray-400">Колонок</div>
+                        <div class="p-lead">12</div>
+                    </div>
+                    <div>
+                        <div class="text-gray-400">Ширина колонки</div>
+                        <div class="p-lead">60-80</div>
+                    </div>
+                    <div>
+                        <div class="text-gray-400">Межколонник</div>
+                        <div class="p-lead">32</div>
                     </div>
                 </div>
-
-                <div class="dropdown" id="dropdown-3">
-                    <button class="dropdown-toggle" id="dropdownToggle-3">Выберите</button>
-                    <div class="dropdown-menu" id="dropdownMenu-3">
-                        <div data-value="1">Вариант 1</div>
-                        <div data-value="2">Вариант 2</div>
-                        <div data-value="3">Вариант 3</div>
-                    </div>
-                </div>
-            </div>
-            <script type="module" src="src/dropdown/dropdown.js"></script>
-
-            <h3>Кнопка</h3>
-            <div class="inner-grid-3">
-                <div class="buttons">
-                    <button class="gradient-button P-14">Кнопка</button>
-                </div>
-                <div class="buttons">
-                    <span class="p-14 gray">Ховер</span>
-                    <button class="gradient-button P-14">Кнопка</button>
-                </div>
-                <div class="buttons">
-                    <span class="p-14 gray">Нажатие</span>
-                    <button class="gradient-button P-14">Кнопка</button>
-                </div>
-                <div class="buttons">
-                    <span class="p-14 gray">Неактивна</span>
-                    <button class="gradient-button P-14" disabled>Кнопка</button>
-                </div>
-
-            </div>
-
-            <h3>Чекбокс, радиобаттон</h3>
-            <div class="inner-grid-2">
-                <div class="checkboxes p-14">
-                    <label><input type="checkbox" name="exampleCheckbox" disabled> Выбери меня</label>
-                    <label><input type="checkbox" name="exampleCheckbox"> Выбери меня</label>
-                    <label><input type="checkbox" name="exampleCheckbox" checked> Птица счастья завтрашнего дня</label>
-                </div>
-
-                <div class="radios p-14">
-                    <label><input type="radio" name="exampleRadio" disabled>Пластмассовый мир победил</label>
-                    <label><input type="radio" name="exampleRadio">Макет оказался сильней</label>
-                    <label><input type="radio" name="exampleRadio" checked>Последний кораблик остыл</label>
-                </div>
-            </div>
+                <img class="col-span-full" src="/pic_desctop.png" alt="">
+            </section>
 
 
-            <h3>Аккордеон</h3>
-
-            <div class="accordion">
-                <div class="accordion-item disabled">
-                    <div class="accordion-header p-16">Аккордеон</div>
-                    <div class="accordion-content">
-                        И я знаю что тебя понимают, меня нет<br>
-                        Когда я говорю всем свой непрошеный совет<br>
-                        Одни всё мыслят и толкуют что судьба то существует<br>
-                        Но я тебе скажу, скрипта не расшифруют<br>
-                        И я бы хотел тебе всё сказать, мой лучший друг<br>
-                        Но я не смогу тебе всё сказать, м-мой лучший друг<br>
-                        И если когда-нибудь мои эмоции умрут<br>
-                        Ты знаешь что включить, ты знаешь где они живут<sup><a
-                            href="https://music.yandex.ru/album/23542770/track/107377764">[1]</a></sup><br></div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header p-16">Аккордеон</div>
-                    <div class="accordion-content">
-                        Приходит программист к психотерапевту.<br>
-                        - Доктор помогите. Очень плохо сплю. Мне снится двоичный код.<br>
-                        - Это у вас от переутомления. Слишком много работаете. Возьмите отпуск, отдохните. Вот эти
-                        таблеточки можете попить. И через месяц ко мне на прием.<br>
-                        Через месяц программист приходит к доктору. Посвежевший и отдохнувший.<br>
-                        - Спасибо, доктор!<br>
-                        - Все нормально? Как самочувствие? Как спите?<br>
-                        - Все отлично доктор! Сплю хорошо. И сны снятся, как и положено, с шестнадцатиричным кодом.<br>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <div class="accordion-header p-16">Аккордеон</div>
-                    <div class="accordion-content">
-                        Гоpдость полными вагонами золотыми погонами<br>
-                        С юга дyют молодые вет…<br>
-                        Pазpывая в клочья облака не забыли шлют из далека<br>
-                        С дома мама И не последняя любовь<br>
-                        А по небy бегyт видишь чьи-то следы<br>
-                        Это может быть ты это может быть я<br>
-                        Это может наш дрyг<br>
-                        Это может нам поют свои<br></div>
-                </div>
-            </div>
-            <script type="module" src="src/accordion/accordion.js"></script>
-
-        </section>
-    </main>
-
-    <script type="module" src="src/aside/aside.js"></script>
-
-
-</div>
-
-<div class="fullscreen">
-    <div class="fullscreen-container">
-        <div class="fullscreen-container-content">
-            <header class="fullscreen-grid-5">
-                <div class="logo-circle">
-                    <img src="/make_bird.svg" width="26px" alt="logo">
-                </div>
-                <span class="p-14 gray" style="grid-column: span 3">Задание выполнил</span>
-            </header>
-
-            <main class="fullscreen-grid-5" style="flex-grow: 1;">
-                <div></div>
-                <div class="fullscreen-container-main" style="grid-column: span 3">
-                    <div class="fullscreen-author">
-                        <h2>Романов<br>Данил Евгеньевич</h2>
-                        <p class="p-16">Студент 3 курса специальности «Цифровые автоматизированные производственные
-                            системы» в КузГТУ<br>Бывший Android-разработчик :)</p>
-                        <p class="p-18" style="font-weight: 500">+7 (999) 649-17-68</p>
-                    </div>
-
-                    <div class="fullscreen-links">
-                        <button class="fullscreen-link-btn"><span class="material-symbols-outlined">open_in_new</span>
-                        </button>
-                        <a class="fullscreen-link" style="text-decoration: none; color: var(--accent-2)" href="https://t.me/LeFFaQ">t.me/LeFFaQ</a>
-                    </div>
-                </div>
-
-            </main>
-        </div>
-        <button class="burger-menu-btn fullscreen-menu-close-btn">
-            <img src="/ico_menu_close.svg" alt="close">
-        </button>
+        </main>
     </div>
 </div>
-<script type="module" src="src/overview/overview.js"></script>
+
 </body>
 </html>
